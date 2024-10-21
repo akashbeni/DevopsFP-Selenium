@@ -23,7 +23,7 @@ public class App {
         options.addArguments("--headless"); 
         WebDriver driver = new ChromeDriver(options);
 
-        driver.get("http://54.91.76.136:8081/contact.html");
+        driver.get("http://54.157.195.125:8081/contact.html");
         driver.getTitle();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
@@ -59,5 +59,7 @@ public class App {
         
         FileUtils.copyFile(srcFile, destFile); 
         driver.quit();
+        
+        
     }
 }
