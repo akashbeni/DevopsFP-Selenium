@@ -45,11 +45,14 @@ public class App {
         driver.findElement(By.id("my-button")).click();
         
         String message = driver.findElement(By.id("response")).getText();
+        
+        System.out.println(message);
 
        // WebElement message = driver.findElement(By.id("message"));
        // message.getText();
        
         //capture screenshot
+        
         
         TakesScreenshot scrShot =  ((TakesScreenshot)driver);
         
