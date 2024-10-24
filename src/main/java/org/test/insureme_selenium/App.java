@@ -23,7 +23,7 @@ public class App {
         options.addArguments("--headless"); 
         WebDriver driver = new ChromeDriver(options);
 
-        driver.get("http://3.80.255.199:8081/contact.html");
+        driver.get("http://18.216.181.50:8081/contact.html");
         driver.getTitle();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
@@ -36,7 +36,7 @@ public class App {
         Thread.sleep(2000);
         name.sendKeys("test");
         phone.sendKeys("+1949888999");
-        email.sendKeys("abcxyz123@gmail.com");
+        email.sendKeys("abcyz123@gmail.com");
         ymessage.sendKeys("Hello please insure me");
                
         Thread.sleep(2000);
